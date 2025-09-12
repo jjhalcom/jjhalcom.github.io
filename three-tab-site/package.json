@@ -1,8 +1,8 @@
 {
-  "name": "three-tab-site",
+  "name": "jjhalcom.github.io",
   "version": "1.0.0",
   "private": true,
-  "homepage": "https://jjhalcom.github.io/three-tab-site",
+  "homepage": "https://jjhalcom.github.io",
   "dependencies": {
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
