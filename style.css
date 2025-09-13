@@ -80,17 +80,21 @@ main {
   margin-bottom: 2rem;
   border-radius: 16px;
   box-shadow: 0 4px 12px rgba(0,0,0,0.15);
-  display: flex;
-  justify-content: center;
+
+  display: flex;              /* arrange children in a row */
+  justify-content: space-between;
   gap: 1rem;
-  flex-wrap: wrap;
 }
 
 .image-box img {
-  max-width: 100%;
-  height: auto;
+  width: 45%;                 /* shrink each image to less than half */
+  height: auto;               /* keep aspect ratio */
   border-radius: 8px;
+  object-fit: cover;           /* tidy cropping if needed */
+  display: block;              /* remove any inline spacing quirks */
 }
+
+
 /* Image box for homepage */
 .image-box {
   background: white;
