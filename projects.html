@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>About</title>
+  <link rel="stylesheet" href="style.css">
+  <style>
+/* Container holding all boxes */
+.container {
+  background: #ffffff;
+  border-radius: 20px;
+  padding: 40px;
+  max-width: 1200px;
+  width: 90%;
+  margin: 40px auto;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+  display: flex;
+  flex-wrap: wrap;          /* allow boxes to wrap */
+  gap: 40px;                /* space between boxes (horizontal + vertical) */
+  justify-content: flex-start;
+}
+
+/* Each content box */
+.box {
+  background: #f1f5f9;
+  border-radius: 15px;
+  flex: 1 1 calc(33% - 40px); /* subtract gap to keep boxes from overflowing */
+  min-width: 280px;
+  padding: 20px 40px; /* 20px top/bottom, 40px left/right */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+  margin-bottom: 40px; /* extra vertical spacing if needed */
+}
+
+/* Hover effect */
+.box:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 6px 14px rgba(0,0,0,0.12);
+}
+
+/* Heading inside the box */
+.box h2 {
+  margin-top: 0;
+  font-size: 1.5rem;
+  color: #1e293b;
+}
+
+/* Image inside the box */
+.box img {
+  width: 100%;
+  max-width: 250px;
+  border-radius: 10px;
+  margin: 15px 0;
+  background: #cbd5e1;
+}
+
+/* Paragraph inside the box */
+.box p {
+  color: #475569;
+  font-size: 1rem;
+  line-height: 1.5;
+}
+
+/* Responsive: stack boxes on smaller screens */
+@media (max-width: 1024px) {
+  .box {
+    flex: 1 1 calc(50% - 40px); /* 2 per row */
+  }
+}
+
+@media (max-width: 640px) {
+  .box {
+    flex: 1 1 100%; /* full width on mobile */
+  }
+}
+</style>
+
+</head>
+<body>
+  <nav>
+    <ul>
+      <li><a href="index.html">Home</a></li>
+      <li><a href="about.html" >About</a></li>
+      <li><a href="projects.html"  class="active">Portfolio</a></li>
+      <li><a href="education.html">Education</a></li>
+      <li><a href="contact.html">Contact</a></li>
+    </ul>
+  </nav>
+
+  <main>
+    <div class="box">
+      <h1>Projects</h1>
+      <p>This is the projects page. </p>
+    </div>
+
+     <div class="box" >
+        <h2>Michigan Tech Summer Youth Program</h2>
+        <p>One of two instructors for How to Build a Computer, Advanced How to Build a Computer, and Cybersecurity classes for the 2025 SYP program teaching high school students
+          <h3>Advanced Building: Gaming Computer</h3>
+          <p>Course Details: <br>"In this hands-on course, students will embark on an exciting journey to 
+            build their own high-performance gaming computer. They will learn to configure the essential components in order to fin
+            e-tune a system that meets their needs. Through guided instruction and practical workshops, students will gain valuable skills 
+            in assembling, troubleshooting and system tuning to get the most out of their new PC. By the end of the week, participants will have b
+            oth a powerful custom-built gaming PC and also a deep understanding of computer hardware plus the confidence to tackle future tech 
+            projects. Students who have previously built a computer system will get the most out of this experience." </p>
+            <h3>Build a Computer</h3>
+          <p>Course Details: <br>"Hands-on learning! Campers will learn computer components and architecture by building a computer. You will start 
+            from scratch from an empty case and end with a fully functioning computer while learning the purpose of each component. You will actually
+             take your computer (without the monitor) home, so be sure to leave room in your suitcase (approx. 2
+             cubic ft)! No prior experience required and students with enthusiasm and an interest in the topic will be successful in this course." </p>
+            <h3>Cybersecurity</h3>
+          <p>Course Details: <br>"Join us for a week-long exploration of cybersecurity. Throughout the week, you'll engage in learning activities designed to introduce students to a range of cybersecurity topics. We will start with cybersecurity on small systems (Arduino or Raspberry Pi) and scale up to larger systems requirements. We aim to make each workshop interesting and interactive. Campers will learn personal best practices for protecting their data and investigate ways in which bad actors can access information. Campers will work in groups in a computer lab environment and a classroom. Students with enthusiasm and interest in the topic will be successful in this course." </p>
+          
+            </div>
+            <div class="image-box">
+                <img src="images/syp2025_1.jpg" alt="syp Photo 1">
+                <img src="images/syp2025_2.jpg" alt="syp Photo 2">
+                <img src="images/syp2025_3.jpg" alt="syp Photo 3">
+    </div>
+    <div class="image-box">
+                <img src="images/syp2025_4.jpg" alt="syp Photo 4">
+                <img src="images/syp25_5.jpg" alt="syp Photo 5">
+                <img src="images/syp25_6.jpg" alt="syp Photo 6">
+                <img src="images/syp25_7.jpg" alt="syp Photo 7">
+    </div>
+  </main>
+</body>
+</html>
+

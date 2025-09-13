@@ -1,12 +1,13 @@
 /* General page setup */
 body {
-  margin: 0;
-  font-family: 'Courier New', Courier, monospace, sans-serif;
-  font-weight: bold;
-  background-color: #add8e6; /* light blue */
   display: flex;
   flex-direction: column;
   align-items: center;
+  margin: 0;
+  font-family: 'Courier New', Courier, monospace, sans-serif;
+  font-weight: bold;
+  background-color: #113768;
+  overflow-x: hidden; /* prevent horizontal scroll */
 }
 
 /* Navbar */
@@ -42,7 +43,15 @@ nav ul li a.active {
   background: #333;
   color: white;
 }
+nav ul li a.education-link {
+  color: #ffffff; /* text color */
+  font-weight: bold;
+  padding: 5px 15px;
+  border-radius: 5px;
 
+  /* diagonal split background */
+  background: linear-gradient(135deg, #fceb57 50%, #eb352f 50%);
+}
 /* Main content box */
 main {
   width: 100%;
