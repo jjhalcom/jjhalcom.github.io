@@ -1,2 +1,0 @@
-# jjhalcom.github.io
-
