@@ -95,24 +95,6 @@ main {
 }
 
 
-/* Image box for homepage */
-.image-box {
-  background: white;
-  width: 60%;
-  padding: 1rem;
-  margin-bottom: 2rem;
-  border-radius: 16px;
-  box-shadow: 0 4px 12px rgba(0,0,0,0.15);
-  display: flex;
-  justify-content: center;
-  gap: 1rem;
-  flex-wrap: wrap;
-}
 
-.image-box img {
-  max-width: 100%;
-  height: auto;
-  border-radius: 8px;
-}
 
 
