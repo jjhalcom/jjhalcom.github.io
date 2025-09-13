@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Education</title>
+  <link rel="stylesheet" href="style.css"> <!-- same stylesheet as other pages -->
+  <style>
+    /* Page-specific layout (3 boxes) */
+    .container {
+      background: #ffffff;
+      border-radius: 20px;
+      padding: 40px;
+      max-width: 1200px;
+      width: 90%;
+      margin: 40px auto;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+    }
+
+    .box-wrapper {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 30px;
+      justify-content: space-between;
+    }
+
+    .box {
+      background: #f1f5f9;
+      border-radius: 15px;
+      flex: 1 1 calc(33% - 20px);
+      min-width: 280px;
+      padding: 20px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      text-align: center;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+      transition: transform 0.2s ease, box-shadow 0.2s ease;
+    }
+
+    .box:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 6px 14px rgba(0,0,0,0.12);
+    }
+
+    .box h2 {
+      margin-top: 0;
+      font-size: 1.5rem;
+      color: #1e293b;
+    }
+
+    .box img {
+      width: 100%;
+      max-width: 250px;
+      border-radius: 10px;
+      margin: 15px 0;
+      background: #cbd5e1;
+    }
+
+    .box p {
+      color: #475569;
+      font-size: 1rem;
+      line-height: 1.5;
+    }
+  </style>
+</head>
+<body>
+  <!-- NAVBAR -->
+  <nav>
+    <ul>
+      <li><a href="index.html">Home</a></li>
+      <li><a href="about.html">About</a></li>
+      <li><a href="projects.html">Projects</a></li>
+      <li><a href="education.html" class="active">Education</a></li>
+      <li><a href="contact.html">Contact</a></li>
+    </ul>
+  </nav>
+
+  <!-- MAIN CONTENT -->
+  <div class="container">
+    <div class="box-wrapper">
+      <div class="box">
+        <h2>High School</h2>
+        <img src="https://via.placeholder.com/250x150" alt="High School">
+        <p>Details about your high school education, achievements, or other highlights can go here.</p>
+      </div>
+
+      <div class="box">
+        <h2>Undergraduate</h2>
+        <img src="https://via.placeholder.com/250x150" alt="Undergraduate">
+        <p>Information about your undergraduate studies, degree, and relevant experiences.</p>
+      </div>
+
+      <div class="box">
+        <h2>Graduate / Certifications</h2>
+        <img src="https://via.placeholder.com/250x150" alt="Graduate / Certifications">
