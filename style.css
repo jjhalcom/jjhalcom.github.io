@@ -1,7 +1,8 @@
 /* General page setup */
 body {
   margin: 0;
-  font-family: Arial, sans-serif;
+  font-family: 'Courier New', Courier, monospace, sans-serif;
+  font-weight: bold;
   background-color: #add8e6; /* light blue */
   display: flex;
   flex-direction: column;
