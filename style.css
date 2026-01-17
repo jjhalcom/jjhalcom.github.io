@@ -81,40 +81,24 @@ main {
     gap: 1rem;
   }
 }
+/* Image box for homepage */
 .image-box {
   background: white;
-  width: 100%;
-  max-width: 1000px;
+  width: 35%;
   padding: 1rem;
   margin-bottom: 2rem;
   border-radius: 16px;
   box-shadow: 0 4px 12px rgba(0,0,0,0.15);
 
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+  display: flex;              /* arrange children in a row */
+  justify-content: space-between;
   gap: 1rem;
-  justify-items: center;
 }
 
 .image-box img {
-  width: 100%;
-  max-width: 220px;   /* 🔑 caps image size */
-  height: 150px;      /* consistent visual height */
-  object-fit: cover;  /* crops nicely */
+  width: 45%;                 /* shrink each image to less than half */
+  height: auto;               /* keep aspect ratio */
   border-radius: 8px;
+  object-fit: cover;           /* tidy cropping if needed */
+  display: block;              /* remove any inline spacing quirks */
 }
-.image-box img {
-  transition: transform 0.2s ease, box-shadow 0.2s ease;
-}
-
-.image-box img:hover {
-  transform: scale(1.05);
-  box-shadow: 0 6px 14px rgba(0,0,0,0.2);
-}
-
-
-
-
-
-
-

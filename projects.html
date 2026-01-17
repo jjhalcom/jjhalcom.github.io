@@ -78,6 +78,29 @@
     flex: 1 1 100%; /* full width on mobile */
   }
 }
+/* ===============================
+   Projects page image overrides
+   =============================== */
+
+/* Only affect image-boxes on THIS page */
+main .image-box {
+  width: 100%;
+  max-width: 1000px;
+  margin: 2rem auto;
+
+  display: flex;
+  flex-wrap: wrap;      /* allow wrapping */
+  justify-content: center;
+  gap: 1rem;
+}
+
+/* Only affect images on THIS page */
+main .image-box img {
+  width: 220px;         /* reasonable size */
+  max-width: 100%;
+  height: auto;         /* no cropping */
+  border-radius: 8px;
+}
 </style>
 
 </head>
@@ -116,8 +139,8 @@
             <h3>Cybersecurity</h3>
           <p>Course Details: <br>"Join us for a week-long exploration of cybersecurity. Throughout the week, you'll engage in learning activities designed to introduce students to a range of cybersecurity topics. We will start with cybersecurity on small systems (Arduino or Raspberry Pi) and scale up to larger systems requirements. We aim to make each workshop interesting and interactive. Campers will learn personal best practices for protecting their data and investigate ways in which bad actors can access information. Campers will work in groups in a computer lab environment and a classroom. Students with enthusiasm and interest in the topic will be successful in this course." </p>
           
-            </div>
-            <div class="image-box">
+      </div>
+    <div class="image-box">
                 <img src="images/syp2025_1.jpg" alt="syp Photo 1">
                 <img src="images/syp2025_2.jpg" alt="syp Photo 2">
                 <img src="images/syp2025_3.jpg" alt="syp Photo 3">
@@ -131,4 +154,5 @@
   </main>
 </body>
 </html>
+
 
